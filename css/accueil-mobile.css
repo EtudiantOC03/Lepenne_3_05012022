@@ -1,0 +1,280 @@
+@media screen and (max-width:768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Roboto", Geneva, Tahoma, sans-serif;
+        font-size: 22px;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 34px;
+        font-family: "Shrikhand", Geneva, Tahoma, sans-serif;
+        margin: 5% auto 0 auto;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    p {
+        font-weight: 100;
+    }
+
+    strong {
+        font-weight: 500;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: #eaeaea;
+        padding-left: 115px;
+    }
+
+    nav p {
+        padding: 0 2%;
+    }
+
+    nav i {
+        padding: 0 2%;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        background-color: #f6f6f6;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    article p {
+        margin: 0;
+    }
+
+    article button {
+        margin: 10% 0;
+        width: 200px;
+        height: 50px;
+        border-radius: 25px;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .degrade {
+        background: linear-gradient(to top left, #9356dc, #ff79da );
+        border-color: transparent;
+    }
+
+    .degrade:hover {
+        background: linear-gradient(to top left, #9f6cdd, #fd92df);
+    }
+
+    .fonctionnement {
+        margin: 4%;
+    }
+
+    ol {
+        list-style: none; 
+        padding: 4%;
+        counter-reset: li;
+        
+    }
+
+    ol a {
+        text-decoration: none;
+        color: black;
+        width: 439px;
+        height: 350px;
+    }
+
+    ol li {
+        counter-increment: li;
+        background: #f6f6f6;
+        margin-bottom: 10%;
+        border-radius: 25px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
+        height: 90px;
+        vertical-align: baseline;
+    }
+
+    ol li::before {
+        content: counter(li); 
+        display: inline-block; 
+        width: 16px;
+        margin: 10% 0 10% -16px;
+        color: white;
+        padding: 3px 7px;
+        margin-right: 8px;
+        background: #9356dc;
+        -moz-border-radius: 60px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    li i {
+        padding: 0 5%;
+        color: #7E7E7E;
+    }
+    
+    li:hover {
+        background: #f5edff;
+    }
+    
+    li i:hover {
+        color: #9356dc;
+    }
+
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #f6f6f6;
+        justify-content: space-between;
+        padding-bottom: 15%;
+    }
+
+    .restaurants h2 {
+        align-self: flex-start;
+        margin-left: 4%;
+    }
+
+    .carte {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        width: 92%;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
+        margin-bottom: 5%;
+    }
+    
+    .carte img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .carte a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .carte-image {
+        position: relative;
+    }
+
+    .etiquette {
+        position: absolute;
+        left: 71%;
+        top: 0.5%;
+        background: #99e2d0;
+        font-weight: 500;
+        color: #269D80;
+        padding: 2%;
+    }
+
+    .info-titre {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 4%;
+        margin-right: 6%;
+    }
+
+    .info-titre h3 {
+        margin: 5% 0 1% 0;
+        font-size: 23px;
+    }
+
+    .info-titre i {
+        margin-top: 22px;
+    }
+
+    .info-titre i:hover {
+        color: linear-gradient(to bottom left, #9356dc, #ff79da );
+        border-color: transparent;
+    }
+
+    .info {
+        margin: 0 0 4% 0;
+        margin-left: 4%;
+    }
+    
+    footer {
+        padding-left: 4%;
+        background: #353535;
+        color: white;
+    }
+
+    footer h2 {
+        font-family: "Shrikhand", "Geneva", Tahoma, sans-serif;
+        margin-top: 0;
+        margin-left: 4%;
+        padding-top: 7%;
+    }
+
+    footer .fas {
+        color: white;
+        padding: 0 2% 0 0;
+    }
+
+    .footer {
+        display: block;
+        padding-bottom: 15%;
+    }
+
+    .footer p {
+        padding: 2% 0 0 0;
+        color: white;
+        font-weight: 400;
+        margin: 1% 0 1% 4%;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        padding-bottom: 15%;
+    }
+
+
+
+
+
+
+   
+
+    
+
+    
+
+    
+    
+        
+
+   
+
+
+
+
+
+
+
+}

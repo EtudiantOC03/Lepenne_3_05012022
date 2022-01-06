@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+    
     <!-- En-tête de la page -->
 
     <head>
@@ -21,25 +21,27 @@
 
     <body>
         <header>
-            <img src="images/logo/ohmyfood@2x.svg" alt="logo">
+           <!-- <img src="images/logo/ohmyfood@2x.svg" alt="logo">-->
+           <h1>ohmyfood</h1>
             <nav>
                 <i class="fas fa-map-marker-alt"></i>
-                <p>Paris, Belleville</p>
+                <p><strong>Paris, Belleville</strong></p>
             </nav>
         </header>
 
         <article>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+            <h2>Réservez le menu qui<br> vous convient</h2>
+            <p>Découvrez des restaurants d'exception,<br> sélectionnés par nos soins.</p>
+            <button class="degrade">Explorer nos restaurants</button>
+            
         </article>
 
         <section class="fonctionnement">
             <h2>Fonctionnement</h2>
             <ol>
-                <li><i class="fas fa-mobile-alt"></i> Choisissez un restaurant </li>
-                <li><i class="fas fa-list-ul"></i> Composez votre menu</li>
-                <li><i class="fas fa-store"></i> Dégustez au restaurant</li>
+                <li><a href="#"><i class="fas fa-mobile-alt fa-lg" ></i> Choisissez un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-list-ul fa-lg"></i> Composez votre menu</a></li>
+                <li><a href="#"><i class="fas fa-store fa-lg"></i> Dégustez au restaurant</a></li>
             </ol>
         </section>
 
@@ -47,39 +49,55 @@
             <h2>Restaurants</h2>
             <div class="carte">
                 <a href="menu1.html">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-                    <p><strong>Nouveau</strong></p>
-                    <h3>La palette du goût</h3>
-                    <i class="far fa-heart"></i>
-                    <p>Ménilmontant</p>
+                    <div class="carte-image">
+                        <img src="images/restaurants/jay-wennington-n_y88twmgwa-uns.png" alt="La palette du goût">
+                        <p class="etiquette">Nouveau</p>
+                    </div>
+                    <div class="info-titre">
+                        <h3>La palette du goût</h3>
+                        <i class="far fa-heart fa-lg"></i>
+                    </div>
+                    <p class="info">Ménilmontant</p>
                 </a>
             </div>
             <div class="carte">
                 <a href="menu2.html">
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-                    <p><strong>Nouveau</strong></p>
-                    <h3>La note enchantée</h3>
-                    <i class="far fa-heart"></i>
-                    <p>Charonne</p>
+                    <div class="carte-image">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.png" alt="La note enchantée">
+                        <p class="etiquette">Nouveau</p>
+                    </div>
+                    <div class="info-titre">
+                        <h3>La note enchantée</h3>
+                        <i class="far fa-heart fa-lg"></i>
+                    </div>
+                    <p class="info">Charonne</p>
                 </a>
             </div>
             <div class="carte">
                 <a href="menu3.html">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
-                    <p><strong>Nouveau</strong></p>
-                    <h3>À la française</h3>
-                    <i class="far fa-heart"></i>
-                    <p>Cité Rouge</p>
+                    <div class="carte-image">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.png" alt="À la française">
+                        <p class="etiquette">Nouveau</p>
+                    </div>
+                    <div class="info-titre">
+                        <h3>À la française</h3>
+                        <i class="far fa-heart fa-lg"></i>
+                    </div>
+                    <p class="info">Cité Rouge</p>
                 </a>
             </div>
             <div class="carte">
                 <a href="menu4.html">
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                        alt="Le délice des sens">
-                    <p><strong>Nouveau</strong></p>
-                    <h3>Le délice des sens</h3>
-                        <i class="far fa-heart"></i>
-                        <p>Folie-Méricourt</p>
+                    <div class="carte-image">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.png"
+                            alt="Le délice des sens">
+                        <p class="etiquette">Nouveau</p>
+                    </div>
+                    <div class="info-titre">
+                        <h3>Le délice des sens </h3>
+                        <i class="far fa-heart fa-lg"></i>
+                    </div>
+                    <p class="info">Folie-Méricourt</p>
                 </a>
             </div>
         </section>
@@ -87,13 +105,13 @@
         <!-- Pied de la page -->
 
         <footer>
-            <h3>ohmyfood</h3>
-            <ul>
-                <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
-                <li><i class="fas fa-hands-helping"></i> Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li><a href="mailto:ohmyfood@contact.com" title="Contact" target="_blank">Contact</a></li>
-            </ul>
+            <h2>ohmyfood</h2>
+                <div class="footer">
+                    <p><i class="fas fa-utensils"></i> Proposer un restaurant</p>
+                    <p><i class="fas fa-hands-helping fa-xs"></i> Devenir partenaire</p>
+                    <p>Mentions légales</li>
+                    <p><a href="mailto:ohmyfood@contact.com" title="Contact" target="_blank">Contact</a></p>
+                </div>
         </footer>
     </body>
 </html>
