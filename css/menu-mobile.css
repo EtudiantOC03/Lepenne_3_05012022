@@ -45,16 +45,20 @@
         color: black;     
     }
 
+    img {
+            width: 100%;
+        }
+
     .titre {
         
         display: flex;
         align-items: center;
-        padding-top: 10%;
+        padding-top: 8%;
         border-radius: 15px;
     }
 
     .titre h1 {
-        margin: 0;
+        margin: 0 0 5% 0;
         padding-left: 4%;
     }
 
@@ -73,11 +77,18 @@
         flex-direction: column;
         position: relative;
         border-radius: 15px 15px 0 0;
+        background: #f6f6f6;
     }
 
     .carte-menu h2 {
         font-weight: 100;
         margin-bottom: 0;
+    }
+
+    .carte {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10%;
     }
 
     .titre-carte {
@@ -104,12 +115,87 @@
         width: 75%;
     }
 
+    .carte-description {
+        background: white;
+        border-radius: 15px;
+        margin-top: 5%;
+        padding-left: 4%;
+    }
+
+    .carte-description p {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    span {
+        font-weight: 500;
+        margin-right: 5%;
+    }
+
+    .commander {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .commander button {
+        margin: 10% 0 30% 0;
+        width: 200px;
+        height: 50px;
+        border-radius: 25px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .degrade {
+        background: linear-gradient(to top left, #9356dc, #ff79da);
+        border-color: transparent;
+    }
+
+    .degrade:hover {
+        background: linear-gradient(to top left, #9f6cdd, #fd92df);
+        box-shadow: 2px 8px 12px #BCABC9;
+        cursor: pointer;
+    }
 
 
 
 
+footer {
+    padding-left: 4%;
+    background: #353535;
+    color: white;
+}
 
+footer h2 {
+    font-family: "Shrikhand", "Geneva", Tahoma, sans-serif;
+    margin-top: 0;
+    margin-left: 4%;
+    padding-top: 7%;
+    font-size: 28px;
+}
 
+footer .fas {
+    color: white;
+    padding: 0 2% 0 0;
+}
 
+.footer {
+    display: block;
+    padding-bottom: 15%;
+}
+
+.footer p {
+    padding: 2% 0 0 0;
+    color: white;
+    font-weight: 400;
+    margin: 1% 0 1% 4%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 15%;
+}
 
 }
