@@ -84,6 +84,8 @@
 
     .degrade:hover {
         background: linear-gradient(to top left, #9f6cdd, #fd92df);
+        box-shadow: 2px 8px 12px #BCABC9;
+        cursor: pointer;
     }
 
     .fonctionnement {
@@ -229,6 +231,7 @@
         margin-top: 0;
         margin-left: 4%;
         padding-top: 7%;
+        font-size: 28px;
     }
 
     footer .fas {
@@ -253,28 +256,5 @@
         color: white;
         padding-bottom: 15%;
     }
-
-
-
-
-
-
-   
-
-    
-
-    
-
-    
-    
-        
-
-   
-
-
-
-
-
-
 
 }
