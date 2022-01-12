@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px) {
+
+    header img {
+        width: 30%;
+    }
+
+    .banniere {
+        position: unset;
+    }
+
+    .carte-menu {
+        width: 80%;
+        position: unset;
+    }
+
+    .titre {
+        justify-content: space-between;
+    }
+
+    .titre .far {
+        margin-right: 4%;
+    }
+
+    .bordure {
+        background: #99E2D0;
+        height: 3px;
+        width: 60px;
+    }
+
+    .carte {
+        margin-left: 4%;
+        margin-right: 4%;
+        padding-bottom: 6%;
+    }
+
+    .titre-carte h2 {
+        margin-top: 0;
+    }
+
+
+
+
+
+
+
+}
