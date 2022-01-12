@@ -1,6 +1,4 @@
-@media screen and (max-width:768px) {
-
-    * {
+* {
         box-sizing: border-box;
     }
 
@@ -13,7 +11,7 @@
     h1 {
         font-size: 34px;
         font-family: "Shrikhand", Geneva, Tahoma, sans-serif;
-        margin: 5% auto 0 auto;
+        margin: 3% auto 1% auto;
     }
 
     h2 {
@@ -43,7 +41,8 @@
         align-items: center;
         width: 100%;
         background-color: #eaeaea;
-        padding-left: 115px;
+        justify-content: center;
+        box-shadow: inset 0px 11px 10px -10px #bababa;
     }
 
     nav p {
@@ -67,80 +66,86 @@
         margin: 0;
     }
 
-    article button {
-        margin: 10% 0;
-        width: 200px;
-        height: 50px;
-        border-radius: 25px;
+    article a {
+        display: flex;
+        text-decoration: none;
         color: white;
-        font-weight: bold;
-        font-size: 15px;
+        font-size: 19px;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .degrade {
         background: linear-gradient(to top left, #9356dc, #ff79da );
         border-color: transparent;
+        margin: 5% 0;
+        width: 65%;
+        height: 55px;
+        border-radius: 25px;
+        font-weight: bold;
+        box-shadow: 2px 4px 4px #BCABC9;
+        opacity: 1;
     }
 
     .degrade:hover {
-        background: linear-gradient(to top left, #9f6cdd, #fd92df);
+        opacity: 0.8;
         box-shadow: 2px 8px 12px #BCABC9;
         cursor: pointer;
     }
 
     .fonctionnement {
-        margin: 4%;
+        margin: 10% 4% ;
+        width: 90%;
     }
 
-    ol {
-        list-style: none; 
-        padding: 4%;
-        counter-reset: li;
-        
-    }
-
-    ol a {
-        text-decoration: none;
-        color: black;
-        width: 439px;
-        height: 350px;
-    }
-
-    ol li {
-        counter-increment: li;
+    .liste-fonc {
+        display: flex;
+        justify-content: space-evenly;
         background: #f6f6f6;
         margin-bottom: 10%;
         border-radius: 25px;
         box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
         height: 90px;
-        vertical-align: baseline;
+        align-items: center;
+        position: relative;
+        margin-left: 4%;
     }
 
-    ol li::before {
-        content: counter(li); 
-        display: inline-block; 
-        width: 16px;
-        margin: 10% 0 10% -16px;
+    .numero {
+        width: 27px;
+        border: 1px solid #9356dc;
+        border-radius: 50px;
+        background-color: #9356dc;
         color: white;
-        padding: 3px 7px;
-        margin-right: 8px;
-        background: #9356dc;
-        -moz-border-radius: 60px;
-        border-radius: 50%;
+        font-weight: 400;
         text-align: center;
+        position: absolute;
+        left: -15px;
     }
 
-    li i {
-        padding: 0 5%;
-        color: #7E7E7E;
+    .liste-fonc i {
+        margin-right: 5%;
+        position: absolute;
+        left: 40px;
+        font-size: xx-large;
     }
-    
-    li:hover {
+
+    .texte {
+        font-weight: 400;
+        position: absolute;
+        left: 100px;
+    }
+
+    .liste-fonc:hover {
         background: #f5edff;
+        cursor: pointer;
     }
-    
-    li i:hover {
+
+    .liste-fonc i:hover {
         color: #9356dc;
+        cursor: pointer;
     }
 
     .restaurants {
@@ -185,8 +190,8 @@
 
     .etiquette {
         position: absolute;
-        left: 71%;
-        top: 0.5%;
+        right: 10px;
+        top: -5px;
         background: #99e2d0;
         font-weight: 500;
         color: #269D80;
@@ -195,29 +200,56 @@
 
     .info-titre {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: space-between;
         margin-left: 4%;
         margin-right: 6%;
+        position: relative;
     }
 
     .info-titre h3 {
-        margin: 5% 0 1% 0;
+        margin: 3% 0 1% 0;
         font-size: 23px;
     }
 
-    .info-titre i {
+    .info-titre .far {
         margin-top: 22px;
+        position: absolute;
+        right: 1px;
+        top: 20px;
+        font-size: xx-large;
     }
 
-    .info-titre i:hover {
-        color: linear-gradient(to bottom left, #9356dc, #ff79da );
-        border-color: transparent;
+    .info-titre .fas {
+        position: absolute;
+        margin-top: 22px;
+        right: 1px;
+        top: 20px;
+        font-size: xx-large;
+        color: transparent;
+    }
+ 
+    .info-titre .fas::before {
+        content: "\f004";
+        font-weight: bold;
+        transition: color 500ms ease-out;
+    }
+
+    .info-titre .fas:hover::before{
+        color: #9356dc;
+        cursor: pointer;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .info-titre .far:hover {
+        z-index: 0;
+        cursor: pointer;
+        color: transparent;
     }
 
     .info {
         margin: 0 0 4% 0;
-        margin-left: 4%;
     }
     
     footer {
@@ -257,4 +289,3 @@
         padding-bottom: 15%;
     }
 
-}
