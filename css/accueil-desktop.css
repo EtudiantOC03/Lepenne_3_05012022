@@ -1,0 +1,108 @@
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 42px;
+        font-family: "Shrikhand", Geneva, Tahoma, sans-serif;
+    }
+
+    header {
+        flex-direction: row;
+        flex-basis: 100%;
+        margin-bottom: 5%;
+    }
+
+    header h1 {
+        flex-basis: 69%;
+        margin: 0 0 0 12%;
+    }
+
+    header nav {
+        flex-basis: 30%;
+    }
+
+    .information {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    article {
+        padding: 0 3%;
+        justify-content: space-evenly;
+        margin: 4% 0;
+    }
+
+    article h2 {
+        margin: 0;
+    }
+
+    .degrade {
+        background: linear-gradient(to top left, #9356dc, #ff79da );
+        border-color: transparent;
+        margin: 3% 0;
+        width: 65%;
+        height: 55px;
+        border-radius: 25px;
+        font-weight: bold;
+        box-shadow: 2px 4px 4px #BCABC9;
+        opacity: 1;
+    }
+
+    .degrade:hover {
+        opacity: 0.8;
+        box-shadow: 2px 8px 12px #BCABC9;
+        cursor: pointer;
+    }
+
+    .fonctionnement {
+        width: 50%;
+        margin: 0 4%;
+    }
+
+    .fonctionnement h2 {
+        margin-left: 2%;
+    }
+
+    .liste-fonc {
+        margin-bottom: 5%;
+    }
+
+    .restaurants {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 4%;
+    }
+
+    .restaurants h2 {
+        margin-right: 90%;
+    }
+
+    .carte {
+        width: 45%;
+    }
+
+    .carte img {
+        height: 280px;
+    }
+
+    .info-titre h3 {
+        margin: 1% 0 1% 0;
+    }
+
+    footer h2 {
+        padding-top: 4%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        padding-bottom: 5%;
+    }
+
+
+
+
+
+
+}
