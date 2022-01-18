@@ -8,6 +8,10 @@
         margin: 0;
     }
 
+   .loader {
+       display: none;
+   }
+
     h1 {
         font-size: 34px;
         font-family: "Shrikhand", Geneva, Tahoma, sans-serif;
@@ -227,12 +231,13 @@
         top: 20px;
         font-size: xx-large;
         color: transparent;
+        transform-origin: bottom;
     }
- 
+
     .info-titre .fas::before {
         content: "\f004";
         font-weight: bold;
-        transition: color 500ms ease-out;
+        transition: color 1500ms ease-in-out; 
     }
 
     .info-titre .fas:hover::before{
@@ -240,6 +245,17 @@
         cursor: pointer;
         border-radius: 50px;
         z-index: 1;
+        animation: coeur 2s cubic-bezier(.78, .03, .13, .85) forwards;   
+    }
+
+    @keyframes coeur {
+        0% {
+            color: #ff79da;
+        }
+
+        100% {
+            color: #9356dc;
+        }
     }
 
     .info-titre .far:hover {
