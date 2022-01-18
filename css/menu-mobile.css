@@ -10,17 +10,17 @@
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 28px;
         font-family: "Shrikhand", Geneva, Tahoma, sans-serif;
         margin: 5% auto 0 auto;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     p {
@@ -65,7 +65,7 @@
         position: absolute;
         border-radius: 25px 25px 0 0;
         background: #f6f6f6;
-        top: 40%;
+        top: 38%;
     }
 
     .carte-menu h2 {
@@ -88,6 +88,54 @@
     .titre .far {
         padding-left: 11%;
         margin-bottom: 5%;
+    }
+
+    .titre .far {
+        margin-top: 22px;
+        position: absolute;
+        right: 34px;
+        top: 30px;
+        font-size: xx-large;
+    }
+
+    .titre .fas {
+        position: absolute;
+        margin-top: 22px;
+        right: 34px;
+        top: 30px;
+        font-size: xx-large;
+        color: transparent;
+        transform-origin: bottom;
+    }
+ 
+    .titre .fas::before {
+        content: "\f004";
+        font-weight: bold;
+        transition: color 1500ms ease-in-out; 
+    }
+
+    .titre .fas:hover::before{
+        color: #9356dc;
+        cursor: pointer;
+        border-radius: 50px;
+        z-index: 1;
+         animation: coeur 2s cubic-bezier(.78, .03, .13, .85) forwards; 
+    }
+
+    @keyframes coeur {
+        0% {
+            color: #ff79da;
+        }
+
+        100% {
+            color: #9356dc;
+        }
+    }
+
+    .titre .far:hover {
+        z-index: 0;
+        cursor: pointer;
+        color: transparent;
     }
 
     .carte {
@@ -126,12 +174,12 @@
         border-radius: 15px;
         padding-left: 4%;
         width: 100%;
-        position: relative;
+      /*  position: relative;*/
         margin-top: 5%;
-        animation: slideDown 1.2s linear;
+        animation: menu 1.2s linear;
     }
 
-    @keyframes slideDown {
+    @keyframes menu {
         from {
             transform: translateY(200px);
             opacity: 0;
@@ -153,11 +201,12 @@
         text-overflow: ellipsis;
         white-space : nowrap;
         overflow: hidden;
+        white-space : nowrap;
         margin: 8% 0 3% 0;
     }
 
     .info {
-        flex-basis: 49%;
+        width: 49%;
         margin: 0 5% 0 0;
     }
 
@@ -166,10 +215,11 @@
         justify-content: center;
         align-items: flex-end;
         width: 24%;  
-        height: 100%;
-        position: absolute;
-        right: 0; 
-        z-index: 2;
+      
+      /*  position: absolute;*/
+        right: 5%; 
+       /* z-index: 2; */
+        transform-origin: 100% 50%;
     }
 
     .prix p {
@@ -184,14 +234,15 @@
     .checkbox {
         display: flex;
         width: 24%;
-        height: 100%;
-        position: absolute;
-       
+        background-color: #99E2D0;
+       /* position: absolute;*/
         border-radius: 0 15px 15px 0 ;
         justify-content: center;
         align-items: center;
-        z-index: 0;
-        right: 0;
+       /* z-index: 1;
+        right: -80px;
+    overflow: hidden;*/
+        transform-origin: 100% 50%;
     }
 
     .checkbox .fas {
@@ -202,11 +253,19 @@
         display: inline-block;   
     }
 
-    .checkbox:hover {
-        background-color: #99E2D0;
-        z-index: 1;
-    }
-    .prix:hover {
+     /* .checkbox:hover {
+      background-color: ;*/
+       /* z-index: 1;*/
+     
+       
+   /* }
+    .prix:hover {*/
+        /*right: 24%;*/
+       /* transition: all 3000ms;
+       
+      
+    }*/
+    .prix:hover .checkbox:hover {
         right: 24%;
         transition: all 3000ms;
     }
@@ -241,8 +300,9 @@
         padding-left: 4%;
         background: #353535;
         color: white;
-        position: absolute;
+        position: initial;
         bottom: 100%;
+        float: none;
     }
 
     footer h2 {
@@ -259,7 +319,6 @@
     }
 
     .footer {
-        display: block;
         padding-bottom: 15%;
     }
 
