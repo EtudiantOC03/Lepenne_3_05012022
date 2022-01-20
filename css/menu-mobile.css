@@ -174,7 +174,7 @@
         border-radius: 15px;
         padding-left: 4%;
         width: 100%;
-      /*  position: relative;*/
+       position: relative;
         margin-top: 5%;
         animation: menu 1.2s linear;
     }
@@ -215,11 +215,11 @@
         justify-content: center;
         align-items: flex-end;
         width: 24%;  
-      
-      /*  position: absolute;*/
-        right: 5%; 
+        position: absolute;
+            right: 3%;
+    bottom: 0%;
        /* z-index: 2; */
-        transform-origin: 100% 50%;
+  
     }
 
     .prix p {
@@ -233,19 +233,23 @@
  
     .checkbox {
         display: flex;
-        width: 24%;
+        width: 0;
         background-color: #99E2D0;
-       /* position: absolute;*/
+      position: absolute;
         border-radius: 0 15px 15px 0 ;
         justify-content: center;
         align-items: center;
-       /* z-index: 1;
-        right: -80px;
-    overflow: hidden;*/
-        transform-origin: 100% 50%;
+        height: 100%;
+        right: 0;
+       /* z-index: 1;*/
+       /* right: -80px;*/
+   /* overflow: hidden;*/
+        
+       
     }
 
     .checkbox .fas {
+        display: none;
         color: white;   
     }
 
@@ -265,11 +269,23 @@
        
       
     }*/
-    .prix:hover .checkbox:hover {
-        right: 24%;
-        transition: all 3000ms;
+    .carte-description:hover .prix {
+        right: 15%;
+        transition: all 250ms linear;
     }
- 
+
+    .carte-description:hover .checkbox {
+        width: 20%;
+        transition: all 250ms linear;
+    }
+
+    .carte-description:hover .fas {
+        display: inline-block;
+        transition-duration: 300ms;
+        transform: rotate(-360deg) ;    
+    }
+
+
     .commander {
         margin-left: auto;
         margin-right: auto;
