@@ -1,12 +1,20 @@
 * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        height: 100%;
     }
 
     body {
         font-family: "Roboto", Geneva, Tahoma, sans-serif;
         font-size: 22px;
-        margin: 0;
-        padding: 0;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
     }
 
     h1 {
@@ -52,20 +60,20 @@
     .banniere img {
         width: 100%;
         height: 300px;
-        object-fit: cover;
-        
+        object-fit: cover;  
     }
 
     .carte-menu {
         display: flex;
         width: 100%;
         margin: 0 auto;
+        margin-top: -20px;
         padding: 15px 15px 0 15px;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         border-radius: 25px 25px 0 0;
         background: #f6f6f6;
-        top: 38%;
+        margin-bottom: 65%;
     }
 
     .carte-menu h2 {
@@ -85,12 +93,9 @@
         padding-left: 4%;
     }
 
-    .titre .far {
+    .titre .far { 
         padding-left: 11%;
         margin-bottom: 5%;
-    }
-
-    .titre .far {
         margin-top: 22px;
         position: absolute;
         right: 34px;
@@ -104,32 +109,23 @@
         right: 34px;
         top: 30px;
         font-size: xx-large;
-        color: transparent;
-        transform-origin: bottom;
     }
  
+    .titre .far:hover {
+        display: none;
+    }
+
     .titre .fas::before {
         content: "\f004";
         font-weight: bold;
-        transition: color 1500ms ease-in-out; 
+        color: transparent;
+        transform-origin: bottom;
+        transition: all 0.8s linear 0s;
     }
 
     .titre .fas:hover::before{
+        display: block;
         color: #9356dc;
-        cursor: pointer;
-        border-radius: 50px;
-        z-index: 1;
-         animation: coeur 2s cubic-bezier(.78, .03, .13, .85) forwards; 
-    }
-
-    @keyframes coeur {
-        0% {
-            color: #ff79da;
-        }
-
-        100% {
-            color: #9356dc;
-        }
     }
 
     .titre .far:hover {
@@ -174,7 +170,7 @@
         border-radius: 15px;
         padding-left: 4%;
         width: 100%;
-       position: relative;
+        position: relative;
         margin-top: 5%;
         animation: menu 1.2s linear;
     }
@@ -216,10 +212,8 @@
         align-items: flex-end;
         width: 24%;  
         position: absolute;
-            right: 3%;
-    bottom: 0%;
-       /* z-index: 2; */
-  
+        right: 3%;
+        bottom: 0%;
     }
 
     .prix p {
@@ -235,40 +229,33 @@
         display: flex;
         width: 0;
         background-color: #99E2D0;
-      position: absolute;
+        position: absolute;
         border-radius: 0 15px 15px 0 ;
         justify-content: center;
         align-items: center;
         height: 100%;
-        right: 0;
-       /* z-index: 1;*/
-       /* right: -80px;*/
-   /* overflow: hidden;*/
-        
-       
+        right: 0;  
     }
 
     .checkbox .fas {
         display: none;
-        color: white;   
+        color: white; 
+        animation: rotation 350ms linear; 
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0);    
+        }
+        to {
+            transform: rotate(-360deg);  
+        }
     }
 
     .checkbox input[type="checkbox"]:checked ~ .checked {
         display: inline-block;   
     }
 
-     /* .checkbox:hover {
-      background-color: ;*/
-       /* z-index: 1;*/
-     
-       
-   /* }
-    .prix:hover {*/
-        /*right: 24%;*/
-       /* transition: all 3000ms;
-       
-      
-    }*/
     .carte-description:hover .prix {
         right: 15%;
         transition: all 250ms linear;
@@ -281,14 +268,12 @@
 
     .carte-description:hover .fas {
         display: inline-block;
-        transition-duration: 300ms;
-        transform: rotate(-360deg) ;    
     }
-
 
     .commander {
         margin-left: auto;
         margin-right: auto;
+        animation: slide 1200ms linear;
     }
 
     .commander button {
@@ -316,9 +301,15 @@
         padding-left: 4%;
         background: #353535;
         color: white;
-        position: initial;
-        bottom: 100%;
-        float: none;
+       /* position: absolute;
+        bottom: 0;*/
+        width: 100%;
+        position: absolute;
+ /*  width: 100%; 
+ height: 30%;*/
+  bottom: 0; 
+  left: 0; 
+  right: 0;
     }
 
     footer h2 {
@@ -335,7 +326,7 @@
     }
 
     .footer {
-        padding-bottom: 15%;
+        padding-bottom: 15%;  
     }
 
     .footer p {
