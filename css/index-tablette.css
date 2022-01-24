@@ -1,9 +1,9 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 
     .loader {
     display: flex;
     position: fixed;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 2.5em;
@@ -11,8 +11,12 @@
     width: 100%;
     height: 100%;
     justify-content: center;
-    animation: loader 3s forwards;
     z-index: -1;
+    background-color: white;
+    opacity: 50%;
+    margin: 0;
+    padding: 0;
+    animation: loader 3s forwards;
 }
 
 @keyframes loader {
@@ -209,6 +213,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-left: 3%;
     }
 
     .fonctionnement h2 {
@@ -238,7 +243,7 @@
     }
 
     .carte {
-        width: 80%;
+        width: 45%;
         margin-right: auto;
         margin-left: auto;
     }
