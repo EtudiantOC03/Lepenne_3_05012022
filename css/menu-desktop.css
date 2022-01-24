@@ -1,5 +1,9 @@
 @media screen and (min-width: 768px) {
 
+    header {
+        padding-top: 4%;
+    }
+
     header img {
         width: 30%;
     }
@@ -10,15 +14,33 @@
 
     .carte-menu {
         width: 80%;
-        position: unset;
+        position: relative;
+        margin-bottom: 35%;
+        margin-top: 0;
+        margin-bottom: 20%;
     }
 
     .titre {
         justify-content: space-between;
+        padding-top: 2%;
     }
 
-    .titre .far {
-        margin-right: 4%;
+    .titre h1 {
+        margin-bottom: 3%;
+    }
+
+    .titre .far { 
+        padding-left: 11%;
+        margin-bottom: 5%;
+        margin-top: 22px;
+        top: 1.5%;
+        right: 6%;  
+    }
+
+    .titre .fas {
+        margin-top: 22px;
+        right: 6%;
+        top: 1.5%;  
     }
 
     .bordure {
@@ -37,7 +59,20 @@
         margin-top: 0;
     }
 
+    footer {
+        margin-top: 2%;
+    }
 
+    footer h2 {
+        padding-top: 4%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        padding-bottom: 5%;
+    }
 
 
 
