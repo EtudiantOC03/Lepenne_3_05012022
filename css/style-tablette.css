@@ -168,21 +168,26 @@
         margin-bottom: 2%;
     }
 
-    .information {
+/*    .information {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         margin-left: auto;
         margin-right: auto;
         width: 95%;
-    }
+    }*/
 
     article {
         padding-top: 2%;
         padding-bottom: 2%;
         justify-content: space-evenly;
-        margin: 1% 0;
+        margin: 1% auto;
         border-radius: 25px;
+        width: 95%;
+    }
+
+    article br {
+        display: none;
     }
 
     article h2 {
@@ -193,7 +198,7 @@
         background: linear-gradient(to top left, #9356dc, #ff79da );
         border-color: transparent;
         margin: 3% 0 1% 0;
-        width: 35%;
+        width: 30%;
         height: 55px;
         border-radius: 25px;
         font-weight: bold;
