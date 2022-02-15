@@ -1,344 +1,392 @@
 * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: "Shrikhand", Geneva, Tahoma, sans-serif;
+    margin: 5% auto 0 auto;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-weight: 300;
+}
+
+    /*--HEADER--*/
+
+header {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+}
+
+header img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+header .fas {
+    color: black;     
+}
+
+.banniere {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.banniere img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;  
+}
+
+    /*--HEADER-FIN--*/
+
+    /*--MENU--*/
+
+.carte-menu {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -20px;
+    padding: 15px 15px 0 15px;
+    flex-direction: column;
+    position: relative;
+    border-radius: 25px;
+    background: #f6f6f6;
+    margin-bottom: 65%;
     }
 
-    html {
-        height: 100%;
-    }
+.carte-menu h2 {
+    font-weight: 100;
+    margin-bottom: 0;
+}
 
-    body {
-        font-family: "Roboto", Geneva, Tahoma, sans-serif;
-        font-size: 22px;
-        min-height: 100%;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
+.titre {
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    border-radius: 15px;
+}
 
-    h1 {
-        font-size: 28px;
-        font-family: "Shrikhand", Geneva, Tahoma, sans-serif;
-        margin: 5% auto 0 auto;
-    }
+.titre h1 {
+    margin: 0 0 5% 0;
+    padding-left: 4%;
+}
 
-    h2 {
-        font-size: 22px;
-    }
+.titre .far { 
+    padding-left: 11%;
+    margin-bottom: 5%;
+    margin-top: 22px;
+    position: absolute;
+    right: 34px;
+    top: 30px;
+    font-size: xx-large;
+}
 
-    h3 {
-        font-size: 20px;
-    }
-
-    p {
-        font-weight: 300;
-    }
-
-    header {
-        display: flex;
-        padding: 5%;
-        align-items: center;
-    }
-
-    header img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-    }
-
-    header .fas {
-        color: black;     
-    }
-
-    .banniere {
-        width: 100%;
-        height: 300px;
-        position: relative;
-    }
-
-    .banniere img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;  
-    }
-
-    .carte-menu {
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
-        margin-top: -20px;
-        padding: 15px 15px 0 15px;
-        flex-direction: column;
-        position: relative;
-        border-radius: 25px 25px 0 0;
-        background: #f6f6f6;
-        margin-bottom: 65%;
-    }
-
-    .carte-menu h2 {
-        font-weight: 100;
-        margin-bottom: 0;
-    }
-
-    .titre {
-        display: flex;
-        align-items: center;
-        padding-top: 5%;
-        border-radius: 15px;
-    }
-
-    .titre h1 {
-        margin: 0 0 5% 0;
-        padding-left: 4%;
-    }
-
-    .titre .far { 
-        padding-left: 11%;
-        margin-bottom: 5%;
-        margin-top: 22px;
-        position: absolute;
-        right: 34px;
-        top: 30px;
-        font-size: xx-large;
-    }
-
-    .titre .fas {
-        position: absolute;
-        margin-top: 22px;
-        right: 34px;
-        top: 30px;
-        font-size: xx-large;
-    }
+.titre .fas {
+    position: absolute;
+    margin-top: 22px;
+    right: 34px;
+    top: 30px;
+    font-size: xx-large;
+}
  
-    .titre .far:hover {
-        display: none;
-    }
+.titre .far:hover {
+    display: none;
+}
 
-    .titre .fas::before {
-        content: "\f004";
-        font-weight: bold;
-        color: transparent;
-        transform-origin: bottom;
-        transition: all 0.8s linear 0s;
-    }
+.titre .fas::before {
+    content: "\f004";
+    font-weight: bold;
+    color: transparent;
+    transform-origin: bottom;
+    transition: all 0.8s linear 0s;
+}
 
-    .titre .fas:hover::before{
-        display: block;
-        color: #9356dc;
-    }
+.titre .fas:hover::before{
+    display: block;
+    color: #9356dc;
+}
 
-    .titre .far:hover {
-        z-index: 0;
-        cursor: pointer;
-        color: transparent;
-    }
+.titre .far:hover {
+    z-index: 0;
+    cursor: pointer;
+    color: transparent;
+}
 
-    .carte {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 10%;
-    }
+.carte {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
 
-    .titre-carte {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        animation: slide 1s linear;
-    }
+.titre-carte {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    animation: slide 1s linear;
+    -webkit-animation: slide 1s linear;
+}
 
-    @keyframes slide {
-        from {
-            transform: translateY(200px);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
+@keyframes slide {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
     }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
-    .bordure {
-        background: #99E2D0;
-        height: 3px;
-        width: 60px;
+@-webkit-keyframes slide {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
     }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
-    .carte-description {
-        display: flex;
-        background: white;
-        border-radius: 15px;
-        padding-left: 4%;
-        width: 100%;
-        position: relative;
-        margin-top: 5%;
-        animation: menu 1.2s linear;
-    }
+.bordure {
+    background: #99E2D0;
+    height: 3px;
+    width: 60px;
+}
 
-    @keyframes menu {
-        from {
-            transform: translateY(200px);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
+.carte-description {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    padding-left: 4%;
+    width: 100%;
+    position: relative;
+    margin-top: 5%;
+    animation: menu 1.2s linear;
+    -webkit-animation: menu 1.2s linear;
+}
+
+@keyframes menu {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
     }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes menu {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
     
-    .carte-description p {
-        text-overflow: ellipsis;
-        white-space : nowrap;
-        overflow: hidden;
-        margin: 3% 5% 8% 0;
-    }
+.carte-description p {
+    text-overflow: ellipsis;
+    white-space : nowrap;
+    overflow: hidden;
+    margin: 3% 5% 8% 0;
+}
 
-    .carte-description h3 {
-        text-overflow: ellipsis;
-        white-space : nowrap;
-        overflow: hidden;
-        white-space : nowrap;
-        margin: 8% 0 3% 0;
-    }
+.carte-description h3 {
+    text-overflow: ellipsis;
+    white-space : nowrap;
+    overflow: hidden;
+    white-space : nowrap;
+    margin: 8% 0 3% 0;
+}
 
-    .info {
-        width: 49%;
-        margin: 0 5% 0 0;
-    }
+.info {
+    width: 49%;
+    margin: 0 5% 0 0;
+}
 
-    .prix {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        width: 24%;  
-        position: absolute;
-        right: 3%;
-        bottom: 0%;
-    }
+.prix {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 24%;  
+    position: absolute;
+    right: 3%;
+    bottom: 0%;
+}
 
-    .prix p {
-        font-weight: 500; 
-        padding-bottom: 10%; 
-    }
+.prix p {
+    font-weight: 500; 
+    padding-bottom: 10%; 
+}
 
-    .checkbox input[type="checkbox"] {
-        display: none;
-    }
+    /* Checkbox */
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
  
-    .checkbox {
-        display: flex;
-        width: 0;
-        background-color: #99E2D0;
-        position: absolute;
-        border-radius: 0 15px 15px 0 ;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        right: 0;  
-    }
+.checkbox {
+    display: flex;
+    width: 0;
+    background-color: #99E2D0;
+    position: absolute;
+    border-radius: 0 15px 15px 0 ;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    right: 0;  
+}
 
-    .checkbox .fas {
-        display: none;
-        color: white; 
-        animation: rotation 350ms linear; 
-    }
+.checkbox .fas {
+    display: none;
+    color: white; 
+    animation: rotation 350ms linear; 
+    -webkit-animation: rotation 350ms linear;
+}
 
-    @keyframes rotation {
-        from {
-            transform: rotate(0);    
-        }
-        to {
-            transform: rotate(-360deg);  
-        }
+@keyframes rotation {
+    from {
+        transform: rotate(0);    
     }
+    to {
+        transform: rotate(-360deg);  
+    }
+}
 
-    .checkbox input[type="checkbox"]:checked ~ .checked {
-        display: inline-block;   
+@-webkit-keyframes rotation {
+    from {
+        transform: rotate(0);    
     }
+    to {
+        transform: rotate(-360deg);  
+    }
+}
 
-    .carte-description:hover .prix {
-        right: 15%;
-        transition: all 250ms linear;
-    }
+.checkbox input[type="checkbox"]:checked ~ .checked {
+    display: inline-block;   
+}
+  
+    /* Checkbox-fin */
 
-    .carte-description:hover .checkbox {
-        width: 20%;
-        transition: all 250ms linear;
-    }
+.carte-description:hover .prix {
+    right: 15%;
+    transition: all 250ms linear;
+}
 
-    .carte-description:hover .fas {
-        display: inline-block;
-    }
+.carte-description:hover .checkbox {
+    width: 20%;
+    transition: all 250ms linear;
+}
 
-    .commander {
-        margin-left: auto;
-        margin-right: auto;
-        animation: slide 1200ms linear;
-    }
+.carte-description:hover .fas {
+    display: inline-block;
+}
 
-    .commander button {
-        margin: 10% 0 30% 0;
-        width: 200px;
-        height: 50px;
-        border-radius: 25px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-    }
+.commander {
+    margin-left: auto;
+    margin-right: auto;
+    animation: slide 1200ms linear;
+    -webkit-animation: slide 1200ms linear;
+}
 
-    .degrade {
-        background: linear-gradient(to top left, #9356dc, #ff79da);
-        border-color: transparent;
-    }
+.commander button {
+    margin: 10% 0 30% 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
 
-    .degrade:hover {
-        background: linear-gradient(to top left, #9f6cdd, #fd92df);
-        box-shadow: 2px 8px 12px #BCABC9;
-        cursor: pointer;
-    }
+.degrade {
+    background: linear-gradient(to top left, #9356dc, #ff79da);
+    border-color: transparent;
+}
 
-    footer {
-        padding-left: 4%;
-        background: #353535;
-        color: white;
-       /* position: absolute;
-        bottom: 0;*/
-        width: 100%;
-        position: absolute;
- /*  width: 100%; 
- height: 30%;*/
-  bottom: 0; 
-  left: 0; 
-  right: 0;
-    }
+.degrade:hover {
+    background: linear-gradient(to top left, #9f6cdd, #fd92df);
+    box-shadow: 2px 8px 12px #BCABC9;
+    cursor: pointer;
+}
 
-    footer h2 {
-        font-family: "Shrikhand", "Geneva", Tahoma, sans-serif;
-        margin-top: 0;
-        margin-left: 4%;
-        padding-top: 7%;
-        font-size: 28px;
-    }
 
-    footer .fas {
-        color: white;
-        padding: 0 2% 0 0;
-    }
+    /*--MENU-FIN--*/
 
-    .footer {
-        padding-bottom: 15%;  
-    }
+    /*--FOOTER--*/
 
-    .footer p {
-        padding: 2% 0 0 0;
-        color: white;
-        font-weight: 400;
-        margin: 1% 0 1% 4%;
-    }
+footer {
+    padding-left: 4%;
+    background: #353535;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+}
 
-    footer a {
-        text-decoration: none;
-        color: white;
-        padding-bottom: 15%;
-    }
+footer h2 {
+    font-family: "Shrikhand", "Geneva", Tahoma, sans-serif;
+    margin-top: 0;
+    margin-left: 4%;
+    padding-top: 7%;
+    font-size: 28px;
+}
+
+footer .fas {
+    color: white;
+    padding: 0 2% 0 0;
+}
+
+.footer {
+    padding-bottom: 15%;  
+}
+
+.footer p {
+    padding: 2% 0 0 0;
+    color: white;
+    font-weight: 400;
+    margin: 1% 0 1% 4%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 15%;
+}
+
+    /*--FOOTER-FIN--*/
 
