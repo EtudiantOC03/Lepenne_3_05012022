@@ -32,7 +32,6 @@ body {
 .loader {
     display: none;
     @media only screen and (min-width: 768px) {
-        .loader {
         display: flex;
         position: fixed;
         top: 50%;
@@ -43,6 +42,7 @@ body {
         width: 100%;
         height: 100%;
         justify-content: center;
+        align-items: center;
         z-index: -1;
         background-color: white;
         opacity: 50%;
@@ -50,243 +50,245 @@ body {
         padding: 0;
         animation: loader 3s forwards;
         -webkit-animation: loader 3s forwards;
-}
 
-    @keyframes loader {
-        0% {
-            opacity: 1;
-            z-index: 9999;
+        @keyframes loader {
+            0% {
+                opacity: 1;
+                z-index: 9999;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                z-index: -1;
+            }
         }
 
-        95% {
-            opacity: 1;
+        @-webkit-keyframes loader {
+            0% {
+                opacity: 1;
+                z-index: 9999;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                z-index: -1;
+            }
         }
 
-        100% {
-            opacity: 0;
-            z-index: -1;
-        }
-    }
-
-    @-webkit-keyframes loader {
-        0% {
-            opacity: 1;
-            z-index: 9999;
+        p {
+            font-family: "Shrikhand", "Roboto", "Sans-serif";
+            font-size: 90px;
+            opacity: 0.7;
         }
 
-        95% {
-            opacity: 1;
+        .ball {
+            //background-color: rgb(0,0,0,0.2);
+            width: 10%;
+            height: 1.5em;
+            border-radius: 1em;
+            text-align: center;
+            font-size: 1em;
+            padding: 0.2em;
+            width: 1.5em;
+            border-style: none;
+            margin: 1em;
+            animation: ball .5s infinite ;
+            -webkit-animation: ball .5s infinite;
         }
 
-        100% {
-            opacity: 0;
-            z-index: -1;
-        }
-    }
-
-    .loader p {
-        font-family: "Shrikhand", "Roboto", "Sans-serif";
-        font-size: 90px;
-        opacity: 0.7;
-    }
-
-    .ball {
-        background-color: rgb(0,0,0,0.2);
-        width: 10%;
-        height: 1.5em;
-        border-radius: 1em;
-        text-align: center;
-        font-size: 1em;
-        padding: 0.2em;
-        width: 1.5em;
-        border-style: none;
-        margin: 1em;
-        animation: ball .5s infinite ;
-        -webkit-animation: ball .5s infinite;
-    }
-
-    #ball-1 {
-        animation: ball1 1.25s infinite;
-        -webkit-animation: ball1 1.25s infinite;
-    }
-
-    #ball-2 {
-        animation: ball2 1.25s infinite;
-        -webkit-animation: ball2 1.25s infinite;
-    }
-
-    #ball-3 {
-        animation: ball3 1.25s infinite;
-        -webkit-animation: ball3 1.25s infinite;
-    }
-
-    @keyframes ball1 {
-        0% {
-            transform: scale(1);
+        #ball-1 {
+            background: lighten($color-primary, $amount: 30%);
+            animation: ball1 1.25s infinite;
+            -webkit-animation: ball1 1.25s infinite;
         }
 
-        20% {
-            transform: scale(1.5);
-            background: #9356dc;
-            opacity: 0.8;
+        #ball-2 {
+            background: lighten($color-tiertary, $amount: 30%);
+            animation: ball2 1.25s infinite;
+            -webkit-animation: ball2 1.25s infinite;
         }
 
-        40% {
-            transform: scale(1);
+        #ball-3 {
+            background: lighten($color-secondary, $amount: 30%);
+            animation: ball3 1.25s infinite;
+            -webkit-animation: ball3 1.25s infinite;
         }
 
-        60% {
-            transform: scale(1);
+        @keyframes ball1 {
+            0% {
+                transform: scale(1);
+            }
+
+            20% {
+                transform: scale(1.5);
+                background: $color-primary;
+                opacity: 0.8;
+            }
+
+            40% {
+                transform: scale(1);
+            }
+
+            60% {
+                transform: scale(1);
+            }
+
+            80% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
-        80% {
-            transform: scale(1);
+        @-webkit-keyframes ball1 {
+            0% {
+                transform: scale(1);
+            }
+
+            20% {
+                transform: scale(1.5);
+                background: $color-primary;
+                opacity: 0.8;
+            }
+
+            40% {
+                transform: scale(1);
+            }
+
+            60% {
+                transform: scale(1);
+            }
+
+            80% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
-        100% {
-            transform: scale(1);
-        }
-    }
+        @keyframes ball2 {
+            0% {
+                transform: scale(1);
+            }
 
-    @-webkit-keyframes ball1 {
-        0% {
-            transform: scale(1);
-        }
+            20% {
+                transform: scale(1);
+            }
 
-        20% {
-            transform: scale(1.5);
-            background: #9356dc;
-            opacity: 0.8;
-        }
+            40% {
+                transform: scale(1.5) translate(0%,-25%);
+                background: $color-tiertary;
+                opacity: 0.8;
+            }
 
-        40% {
-            transform: scale(1);
-        }
+            60% {
+                transform: scale(1);
+            }
 
-        60% {
-            transform: scale(1);
-        }
+            80% {
+                transform: scale(1);
+            }
 
-        80% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(1);
-        }
-    }
-
-    @keyframes ball2 {
-        0% {
-            transform: scale(1);
+            100% {
+                transform: scale(1);
+            }
         }
 
-        20% {
-            transform: scale(1);
+        @-webkit-keyframes ball2 {
+            0% {
+                transform: scale(1);
+            }
+
+            20% {
+                transform: scale(1);
+            }
+
+            40% {
+                transform: scale(1.5) translate(0%,-25%);
+                background: $color-tiertary;
+                opacity: 0.8;
+            }
+
+            60% {
+                transform: scale(1);
+            }
+
+            80% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
-        40% {
-            transform: scale(1.5) translate(0%,-25%);
-            background: #99e2d0;
-            opacity: 0.8;
+        @keyframes ball3 {
+            0% {
+                transform: scale(1);
+            }
+
+            20% {
+                transform: scale(1);
+            }
+
+            40% {
+                transform: scale(1);
+            }
+
+            60% {
+                transform: scale(1.5);
+                background: $color-secondary;
+                opacity: 0.8;
+            }
+
+            80% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
-        60% {
-            transform: scale(1);
-        }
+        @-webkit-keyframes ball3 {
+            0% {
+                transform: scale(1);
+            }
 
-        80% {
-            transform: scale(1);
-        }
+            20% {
+                transform: scale(1);
+            }
 
-        100% {
-            transform: scale(1);
-        }
-    }
+            40% {
+                transform: scale(1);
+            }
 
-    @-webkit-keyframes ball2 {
-        0% {
-            transform: scale(1);
-        }
+            60% {
+                transform: scale(1.5);
+                background: $color-secondary;
+                opacity: 0.8;
+            }
 
-        20% {
-            transform: scale(1);
-        }
+            80% {
+                transform: scale(1);
+            }
 
-        40% {
-            transform: scale(1.5) translate(0%,-25%);
-            background: #99e2d0;
-            opacity: 0.8;
+            100% {
+                transform: scale(1);
+            }
         }
-
-        60% {
-            transform: scale(1);
-        }
-
-        80% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(1);
-        }
-    }
-
-    @keyframes ball3 {
-        0% {
-            transform: scale(1);
-        }
-
-        20% {
-            transform: scale(1);
-        }
-
-        40% {
-            transform: scale(1);
-        }
-
-        60% {
-            transform: scale(1.5);
-            background: #ff79da;
-            opacity: 0.8;
-        }
-
-        80% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(1);
-        }
-    }
-
-    @-webkit-keyframes ball3 {
-        0% {
-            transform: scale(1);
-        }
-
-        20% {
-            transform: scale(1);
-        }
-
-        40% {
-            transform: scale(1);
-        }
-
-        60% {
-            transform: scale(1.5);
-            background: #ff79da;
-            opacity: 0.8;
-        }
-
-        80% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(1);
-        }
-    }
     }
 }
 
@@ -638,5 +640,4 @@ footer {
         font-weight: 400;
         margin: 1% 0 1% 4%;
     }
-}
-
+} 
