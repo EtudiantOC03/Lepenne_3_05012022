@@ -136,4 +136,132 @@ article a {
 }
 .list-fonc:hover .text {
   color: initial;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f6;
+  justify-content: space-between;
+  padding-bottom: 10%;
+}
+.restaurants h2 {
+  align-self: flex-start;
+  margin-left: 4%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 92%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5%;
+}
+.card a {
+  text-decoration: none;
+  color: black;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-image {
+  position: relative;
+}
+.card-image .band {
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  background: #99e2d0;
+  font-weight: 500;
+  color: #269D80;
+  padding: 2%;
+}
+
+.heading-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 4%;
+  margin-right: 6%;
+  position: relative;
+}
+.heading-card h3 {
+  margin: 3% 0 1% 0;
+  font-size: 23px;
+}
+.heading-card .info {
+  margin: 0 0 4% 0;
+}
+.heading-card .far {
+  margin-top: 22px;
+  position: absolute;
+  right: 1px;
+  top: 20px;
+  font-size: xx-large;
+}
+.heading-card .far:hover {
+  display: none;
+  z-index: 0;
+  cursor: pointer;
+  color: transparent;
+}
+.heading-card .fas {
+  position: absolute;
+  margin-top: 22px;
+  right: 1px;
+  top: 20px;
+  font-size: xx-large;
+}
+.heading-card .fas::before {
+  content: "\f004";
+  font-weight: bold;
+  color: transparent;
+  transform-origin: bottom;
+  transition: all 0.8s linear 0s;
+}
+.heading-card .fas:hover::before {
+  display: block;
+  color: #9356dc;
+}
+
+footer {
+  padding-left: 4%;
+  background: #353535;
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand", "Geneva", Tahoma, sans-serif;
+  margin-top: 0;
+  margin-left: 4%;
+  padding-top: 7%;
+  font-size: 28px;
+}
+footer .fas {
+  color: white;
+  padding: 0 2% 0 0;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 15%;
+}
+
+.footer {
+  display: block;
+  padding-bottom: 15%;
+}
+.footer p {
+  padding: 2% 0 0 0;
+  color: white;
+  font-weight: 400;
+  margin: 1% 0 1% 4%;
 }/*# sourceMappingURL=accueil.css.map */
