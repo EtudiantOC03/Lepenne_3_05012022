@@ -1,0 +1,58 @@
+// article
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-background;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 5%;
+    @media only screen and (min-width: 768px) {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        justify-content: space-evenly;
+        margin: 1% auto;
+        border-radius: 25px;
+        width: 95%;
+        br {
+            display: none;
+        }
+        h2 {
+            margin: 0 0 1% 0;
+        }
+    }
+    p {
+        margin: 0;
+    }
+    a {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.degrade {
+    border-color: transparent;
+    margin: 5% 0;
+    width: 65%;
+    height: 55px;
+    border-radius: 25px;
+    font-weight: bold;
+    background: linear-gradient(to top left, $color-primary, $color-secondary );
+    @include box-shadow;
+    opacity: 1;
+    @media only screen and (min-width: 768px) {
+        margin: 3% 0 1% 0;
+        width: 30%;
+    }
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        @include shadow-hover;
+    }
+}

@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 34px;
+    font-family: "Shrikhand", "Geneva", "Tahoma", "sans-serif";
+    margin: 3% auto 1% auto;
+    @media only screen and (min-width: 768px) {
+        font-size: 42px;
+        font-family: "Shrikhand", Geneva, Tahoma, sans-serif;
+        margin-top: 1%;
+    }
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-weight: 100;
+}
+
+strong {
+    font-weight: 500;
+}
+
+// header
+
+header {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    @media only screen and (min-width: 768px) {
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #eaeaea;
+    justify-content: center;
+    box-shadow: inset 0px 11px 10px -10px #bababa;
+    p, i {
+        padding: 0 2%;
+    }  
+}

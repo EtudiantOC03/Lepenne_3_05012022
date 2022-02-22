@@ -1,0 +1,14 @@
+// mixin
+@mixin box-shadow {
+    box-shadow: 2px 4px 4px #9f8fac;
+}
+
+@mixin shadow-hover {
+    box-shadow: 4px 6px 6px #9f8fac;
+}
+
+@mixin background-hover {
+    background-color: lighten($color: $color, $amount: 10%);
+}
+
+//

@@ -1,0 +1,47 @@
+// footer
+
+footer {
+    padding-left: 4%;
+    background: #353535;
+    color: white;
+    @media only screen and (min-width: 768px) {
+        margin-top: 2%;
+    }
+    h2 {
+       font-family: "Shrikhand", "Geneva", Tahoma, sans-serif;
+        margin-top: 0;
+        margin-left: 4%;
+        padding-top: 7%;
+        font-size: 28px; 
+        @media only screen and (min-width: 768px) {
+            margin-top: 0;
+            padding-top: 4%;
+        }
+    }
+    .fas {
+        color: white;
+        padding: 0 2% 0 0;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        padding-bottom: 15%;
+    }
+}
+
+.footer {
+    display: block;
+    padding-bottom: 15%;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        padding-bottom: 5%;
+    }
+    p {
+        padding: 2% 0 0 0;
+        color: white;
+        font-weight: 400;
+        margin: 1% 0 1% 4%;
+    }
+}

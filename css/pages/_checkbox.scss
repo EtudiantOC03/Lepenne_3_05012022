@@ -1,0 +1,47 @@
+// checkbox
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox {
+    display: flex;
+    width: 0;
+    background-color: #99E2D0;
+    position: absolute;
+    border-radius: 0 15px 15px 0 ;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    right: 0;  
+    .fas {
+        display: none;
+        color: white; 
+        animation: rotation 350ms linear; 
+        -webkit-animation: rotation 350ms linear;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);    
+    }
+    to {
+        transform: rotate(-360deg);  
+    }
+}
+
+@-webkit-keyframes rotation {
+    from {
+        transform: rotate(0);    
+    }
+    to {
+        transform: rotate(-360deg);  
+    }
+}
+
+.checkbox input[type="checkbox"]:checked ~ .checked {
+    display: inline-block;   
+}
+
+// 
