@@ -14,7 +14,7 @@ body {
 
 h1 {
   font-size: 34px;
-  font-family: "Shrikhand", Geneva, Tahoma, sans-serif;
+  font-family: "Shrikhand", "Geneva", "Tahoma", "sans-serif";
   margin: 3% auto 1% auto;
 }
 
@@ -89,4 +89,51 @@ article a {
   opacity: 0.8;
   cursor: pointer;
   box-shadow: 4px 6px 6px #9f8fac;
+}
+
+.fonctionnement {
+  margin: 10% 4%;
+  width: 90%;
+}
+
+.list-fonc {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10%;
+  border-radius: 25px;
+  height: 90px;
+  align-items: center;
+  position: relative;
+  margin-left: 4%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.list-fonc .number {
+  width: 27px;
+  border: 1px solid #9356dc;
+  border-radius: 50px;
+  background-color: #9356dc;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  position: absolute;
+  left: -15px;
+}
+.list-fonc .text {
+  font-weight: 400;
+  position: absolute;
+  left: 100px;
+}
+.list-fonc i {
+  margin-right: 5%;
+  position: absolute;
+  left: 40px;
+  font-size: xx-large;
+}
+.list-fonc:hover {
+  background-color: #efe6fa;
+  color: #9356dc;
+}
+.list-fonc:hover .text {
+  color: initial;
 }/*# sourceMappingURL=accueil.css.map */
