@@ -10,14 +10,7 @@ body {
 
 
 h1 {
-    font-size: 34px;
-    font-family: "Shrikhand", "Geneva", "Tahoma", "sans-serif";
-    margin: 3% auto 1% auto;
-    @media only screen and (min-width: 768px) {
-        font-size: 42px;
-        font-family: "Shrikhand", Geneva, Tahoma, sans-serif;
-        margin-top: 1%;
-    }
+    font-size: 24px;
 }
 
 h2 {
@@ -59,16 +52,4 @@ header {
             padding: 2%;
         }
     }    
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: #eaeaea;
-    justify-content: center;
-    box-shadow: inset 0px 11px 10px -10px #bababa;
-    p, i {
-        padding: 0 2%;
-    }  
 }
