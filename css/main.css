@@ -317,6 +317,23 @@ header {
     margin-bottom: 3%;
   }
 }
+header img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding: 4%;
+}
+@media screen and (min-width: 768px) {
+  header img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  header img {
+    width: 30%;
+    padding: 2%;
+  }
+}
 
 nav {
   display: flex;
@@ -398,7 +415,7 @@ article a {
 @media only screen and (min-width: 768px) {
   .fonctionnement {
     width: 100%;
-    margin: 0;
+    margin: 0 0 3% 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -442,7 +459,7 @@ article a {
 .list__text {
   font-weight: 400;
   position: absolute;
-  left: 100px;
+  left: 95px;
 }
 .list i {
   margin-right: 5%;
@@ -496,7 +513,7 @@ article a {
   border-radius: 15px;
   width: 92%;
   box-shadow: 2px 4px 4px #9f8fac;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
 }
 @media only screen and (min-width: 768px) {
   .card-restaurants {

@@ -5,7 +5,7 @@
     width: 90%;
     @media only screen and (min-width: 768px) {
         width: 100%;
-        margin: 0;
+        margin: 0 0 3% 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -46,7 +46,7 @@
     &__text {
         font-weight: 400;
         position: absolute;
-        left: 100px;
+        left: 95px;
     }
     i {
         margin-right: 5%;

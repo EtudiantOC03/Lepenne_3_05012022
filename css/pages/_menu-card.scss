@@ -36,8 +36,10 @@
     h1 {
         margin: 0 0 8% 0;
         padding-left: 4%;
+        font-size: 30px;
         @media screen and (min-width: 768px) {
             margin-bottom: 3%;
+            font-size: 38px;
         }
     }
     .far {
@@ -117,8 +119,10 @@
     h2 {
         font-weight: 100;
         margin-bottom: 0;
+        font-size: 24px;
         @media screen and (min-width: 768px) {
             margin-top: 0;
+            font-size: 28px;
         }
     }
     .border {
@@ -259,6 +263,10 @@
         overflow: hidden;
         white-space : nowrap;
         margin: 8% 0 3% 0;
+        font-size: 22px;
+        @media screen and (min-width: 768px) {
+            font-size: 26px;
+        }
     }
 }
 
