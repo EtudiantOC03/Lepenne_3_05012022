@@ -414,6 +414,9 @@ header .fas {
   position: relative;
   margin-top: 5%;
 }
+.description-card:hover {
+  cursor: pointer;
+}
 .description-card:hover .price {
   right: 15%;
   transition: all 250ms linear;
@@ -452,7 +455,7 @@ header .fas {
 }
 @media screen and (min-width: 768px) {
   .description-card h3 {
-    font-size: 26px;
+    font-size: 25px;
   }
 }
 
